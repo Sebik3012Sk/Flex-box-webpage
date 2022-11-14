@@ -1,0 +1,19 @@
+@keyframes scaleImages {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.09);
+    }
+}
+
+@keyframes fontSize {
+    from {
+        font-size: 23px;
+    }
+
+    to {
+        font-size: 26px;
+    }
+}

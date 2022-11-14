@@ -1,0 +1,26 @@
+@media (max-width : 650px) {
+    header .menu {
+        flex-direction: column;
+    }
+
+    header .menu .item-menu {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+    }
+
+    header .fotogallery-images .one-image {
+        border: 0px solid black;
+    }
+
+    header .search-input {
+        width: 345px;
+    }
+
+    header .search-input:focus {
+        width: 385px;
+        transition: 0.3s;
+    }
+
+}
