@@ -1,10 +1,15 @@
 import { scrollFotogallery } from "./function.js";
 import { search } from "./function.js";
+import { button, button_search } from "./variables.js";
+import { search_input } from "./variables.js";
+import { screen } from "./variables.js";
+import { addSearchListener } from "./function.js";
 
-const button = document.querySelector(".button-first")
 
 button.addEventListener("click",scrollFotogallery)
 
-const search_input = document.querySelector(".search-input")
+screen.addEventListener("keypress",function(event){
+    addSearchListener()
+})
 
-search_input.addEventListener("change",search)
+button_search.addEventListener("click",addSearchListener)

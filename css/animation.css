@@ -1,19 +1,62 @@
-@keyframes scaleImages {
-    from {
-        transform: scale(1);
-    }
+@-webkit-keyframes scaleImages {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+}
 
-    to {
-        transform: scale(1.09);
-    }
+@keyframes scaleImages {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+}
+
+@-webkit-keyframes fontSize {
+  from {
+    font-size: 23px;
+  }
+  to {
+    font-size: 26px;
+  }
 }
 
 @keyframes fontSize {
-    from {
-        font-size: 23px;
-    }
-
-    to {
-        font-size: 26px;
-    }
+  from {
+    font-size: 23px;
+  }
+  to {
+    font-size: 26px;
+  }
 }
+
+@-webkit-keyframes rotateMenu {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes rotateMenu {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+/*# sourceMappingURL=animation.css.map */

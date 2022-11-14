@@ -1,5 +1,6 @@
-const button = document.querySelector(".button-first")
-const scrollTos = document.querySelector(".fotogallery-text").offsetTop
+import { scrollTos } from "./variables.js";
+import { search_input } from "./variables.js";
+
 
 export function scrollFotogallery(event){
     setTimeout(function(){
@@ -10,7 +11,7 @@ export function scrollFotogallery(event){
     },150)
 }
 
-// const search_input = document.querySelector(".search-input")
+
 
 let list_data = []
 
@@ -29,15 +30,12 @@ export function search(event){
     for(let d of list_destinatiaon){
         if(parse_data[0] == d){
             location.assign("https://www.blue-style.cz/first-minute/?gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHCzH0spc9PDTDlpPS5n7n855kTXLale1B_FhWVExSXrrjgvLx9lWQaAskJEALw_wcB")
-        } else if(parse_data[0] !== d) {
-            var error_element = document.createElement("p")
-            error_element.textContent = `We cannot find your text`
-            error_element.classList.add("error_text")
-
-            document.querySelector(".error-div").appendChild(error_element)
-        } else {
-            error_element.textContent = "";
         }
 
     }
 }
+
+export function addSearchListener(){
+    search_input.addEventListener("change",search)
+}
+

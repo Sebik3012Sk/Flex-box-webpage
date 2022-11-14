@@ -94,6 +94,7 @@ header .menu .item-menu {
   margin-right: 105px;
   margin-bottom: 145px;
   padding-bottom: 5px;
+  fill: transparent;
 }
 
 header .menu .item-menu:hover, header .menu .item-menu:active {
@@ -104,12 +105,13 @@ header .menu .item-menu:hover, header .menu .item-menu:active {
   border: 1px solid rgba(255, 8, 0, 0.774);
   font-size: 26px;
   padding: 12px 12px 12px 12px;
-  -webkit-animation-name: fontSize;
-          animation-name: fontSize;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-name: fontSize , rotateMenu;
+          animation-name: fontSize , rotateMenu;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: flexbox;
 }
 
 header .search-input {
@@ -134,6 +136,26 @@ header .search-input:focus {
   width: 475px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.button-search {
+  margin-left: 0px;
+  width: 150px;
+  height: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#772727), color-stop(#eb471e), color-stop(#8f3131), to(#6b1212));
+  background: linear-gradient(#772727, #eb471e, #8f3131, #6b1212);
+}
+
+.button-search:hover, .button-search:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bd1313), color-stop(#bd1313), to(#ce1d1d));
+  background: linear-gradient(#bd1313, #bd1313, #ce1d1d);
+  -webkit-transition: 2.7s;
+  transition: 2.7s;
+}
+
+.button-search .search-icon {
+  width: 85px;
+  height: 65px;
 }
 
 header .header-text {

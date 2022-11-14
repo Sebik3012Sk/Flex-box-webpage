@@ -49,7 +49,6 @@ header .button-first {
 }
 
 
-
 header .menu {
     display: flex;
     flex-direction: row;
@@ -67,6 +66,8 @@ header .menu .item-menu {
     margin-right: 105px;
     margin-bottom: 145px;
     padding-bottom: 5px;
+    fill: transparent;
+
 
     &:hover,
     &:active {
@@ -76,9 +77,10 @@ header .menu .item-menu {
         border: 1px solid rgba(255, 8, 0, 0.774);
         font-size: 26px;
         padding: 12px 12px 12px 12px;
-        animation-name: fontSize;
-        animation-duration: 2s;
+        animation-name: fontSize , rotateMenu;
+        animation-duration: 4s;
         transition: 0.3s;
+        display: flexbox;
     }
 }
 
@@ -103,6 +105,27 @@ header .search-input {
         transition: 0.3s;
     }
 }
+
+.button-search {
+    margin-left: 0px;
+    width: 150px;
+    height: 80px;
+    background: $header_background;
+
+    &:hover,
+    &:active {
+        background: linear-gradient(rgb(189, 19, 19),rgb(189, 19, 19),rgb(206, 29, 29));
+        transition: 2.7s;
+    }
+
+    & .search-icon {
+        width: 85px;
+        height: 65px;
+    }
+
+}
+
+
 
 header .header-text {
     color: white;
@@ -172,7 +195,7 @@ main .fotogallery-images .one-image:active {
 }
 
 footer {
-    background: linear-gradient(rgb(92, 22, 22),rgb(155, 28, 28),rgb(124, 25, 25));
+    background: $footer-background-gradient;
     border-radius: 17px;
     height: 78px;
     display: flex;
