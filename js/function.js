@@ -23,7 +23,7 @@ export function search(event){
 
     let parse_data = JSON.parse(localStorage.getItem("search"))
 
-    console.log(parse_data[1])
+    console.log(parse_data)
 
     let list_destinatiaon = ["španělsko","Španělsko"]
     
