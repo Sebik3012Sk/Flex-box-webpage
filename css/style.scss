@@ -58,7 +58,7 @@ header .menu {
 
 header .menu .item-menu {
     text-decoration: none;
-    color: white;
+    color: fade-in($color: (rgb(238, 184, 141)), $amount: 1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-size: $menu-item-font-size;

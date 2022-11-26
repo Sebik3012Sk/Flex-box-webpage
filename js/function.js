@@ -9,6 +9,8 @@ export function scrollFotogallery(event){
             behavior : "smooth"
         })
     },150)
+
+    
 }
 
 
@@ -19,6 +21,7 @@ export function search(event){
     list_data.push(event.target.value)
     let json_data = JSON.stringify(list_data)
     localStorage.setItem("search",json_data)
+
 
 
     let parse_data = JSON.parse(localStorage.getItem("search"))
